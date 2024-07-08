@@ -8,7 +8,7 @@ The architecture of the application is based, apply and strictly complies with e
 4. **[S.O.L.I.D]**:(https://en.wikipedia.org/wiki/SOLID) design principles intended to make software designs more understandable, flexible and maintainable.
 5. **[Modular app architecture]**: (https://proandroiddev.com/build-a-modular-android-app-architecture-25342d99de82) allows to be developed features in isolation, independently from other features.
 
-Tech-task
+## Tech-task
 -   [Android KTX](https://developer.android.com/kotlin/ktx.html) → provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
 -   [AndroidX](https://developer.android.com/jetpack/androidx) → major improvement to the original Android [Support Library](https://developer.android.com/topic/libraries/support-library/index), which is no longer maintained.
 -   [Data Binding](https://developer.android.com/topic/libraries/data-binding/) → allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
@@ -19,7 +19,15 @@ Tech-task
 -   [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) → designed to store and manage UI-related data in a lifecycle conscious way. The ViewModel class allows data to survive configuration changes such as screen rotations.
 -   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) → managing background threads with simplified code and reducing needs for callbacks.
 -   [Hilt](https://dagger.dev/) - dependency injector for replacement all FactoryFactory classes.
-- 
+
+## Screenshots
+
+<img src="screenshot/list-screen.png" alt="Screenshot">
+<img src="screenshot/detail.png" alt="Screenshot">
+
+# App architecture
+<img src="screenshot/app-architecture.png" alt="Screenshot">
+
 ## Modules Overview
 
 The project is divided into several modules:
