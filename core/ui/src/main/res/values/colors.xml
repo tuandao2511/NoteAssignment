@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="core_transparent">#00000000</color>
+    <color name="core_color_text_body">#0e162c</color>
+    <color name="core_hex_0000000">#000000</color>
+    <color name="core_hex_737373">#737373</color>
+</resources>

@@ -1,0 +1,94 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+jetbrainsKotlinJvm = "1.9.0"
+androidxCore = "1.13.1"
+safeArgGradle = "2.7.7"
+constraintLayout = "2.1.4"
+lifecycle = "2.8.3"
+navigationFragmentKtx = "2.7.7"
+navigationUiKtx = "2.7.7"
+room = "2.6.1"
+kotlinxCoroutines = "1.7.3"
+testCore = "1.6.1"
+testExtJunit = "1.2.1"
+testRunner = "1.5.0-alpha02"
+sdp = "1.0.6"
+ssp = "1.0.6"
+gson = "2.10.1"
+hilt = "2.49"
+hiltNav = "1.2.0"
+fragmentKtx = "1.8.1"
+timber = "5.0.1"
+lottie = "6.1.0"
+mockK = "1.13.8"
+coroutinesTest = "1.6.0"
+androidxArchCore = "2.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+coreKtx= { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+sdp = { module = "com.intuit.sdp:sdp-android", version.ref = "sdp" }
+ssp = { module = "com.intuit.ssp:ssp-android", version.ref = "ssp" }
+constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayout" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+lifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycleViewmodelKtx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+navigationFragmentKtx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+navigationUiKtx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+roomRuntime = { module = "androidx.room:room-runtime", version.ref = "room" }
+roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+roomKtx = { module = "androidx.room:room-ktx", version.ref = "room" }
+roomTesting = { module = "androidx.room:room-testing", version.ref = "room" }
+kotlinxCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinxCoroutinesAndroid = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+lifecycleLivedataKtx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+testCore = { module = "androidx.test:core", version.ref = "testCore" }
+testCoreKtx = { module = "androidx.test:core-ktx", version.ref = "testCore" }
+testExtJunit = { module = "androidx.test.ext:junit", version.ref = "testExtJunit" }
+fragmentKtx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+hiltLib = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hiltNavLib = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltNav" }
+hiltTesting = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+hiltCompiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+android-tools-build-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+hilt-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+mockK = { module = "io.mockk:mockk", version.ref = "mockK" }
+coroutineTest = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+androidx-archcore-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidxArchCore" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrainsKotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+kotlin = { id = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+safeArgGradle = { id = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "safeArgGradle" }
+sample-android-application = { id = "sample.android.application", version = "unspecified" }
+sample-android-library = { id = "sample.android.library", version = "unspecified" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+navigationSafeKotlin = {id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationFragmentKtx"}
+
+[bundles]
+room = ["roomRuntime", "roomKtx","roomCompiler","roomTesting"]
+lifecycle = ["lifecycleRuntimeKtx", "lifecycleViewmodelKtx", "lifecycleLivedataKtx"]
+support = ["appcompat", "constraintLayout", "material", "coreKtx", "fragmentKtx", "ssp", "sdp","timber"]
+navigation = ["navigationFragmentKtx", "navigationUiKtx"]
+coroutine = ["kotlinxCoroutines", "kotlinxCoroutinesAndroid"]
+androidTest = ["testCore", "testCoreKtx", "testExtJunit"]
+mockKTest = ["mockK","coroutineTest"]
+

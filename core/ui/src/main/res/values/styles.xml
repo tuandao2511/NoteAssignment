@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CoreCustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/core_transparent</item>
+        <item name="android:bottomDark">@color/core_transparent</item>
+        <item name="android:bottomMedium">@color/core_transparent</item>
+        <item name="android:centerBright">@color/core_transparent</item>
+        <item name="android:centerDark">@color/core_transparent</item>
+        <item name="android:centerMedium">@color/core_transparent</item>
+        <item name="android:fullBright">@color/core_transparent</item>
+        <item name="android:fullDark">@color/core_transparent</item>
+        <item name="android:topBright">@color/core_transparent</item>
+        <item name="android:topDark">@color/core_transparent</item>
+    </style>
+
+    <style name="CoreLoadingTheme" parent="android:Theme.Material.Dialog">
+        <item name="android:alertDialogStyle">@style/CoreCustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/core_transparent</item>
+        <item name="android:colorBackground">@color/core_transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="core_TextBody" tools:ignore="UnusedResources">
+        <item name="android:textColor">@color/core_color_text_body</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:lineSpacingExtra">@dimen/_5ssp</item>
+    </style>
+
+    <style name="CoreTitleText">
+        <item name="android:textColor">@color/core_hex_0000000</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CoreTitleDescription">
+        <item name="android:textColor">@color/core_hex_737373</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+</resources>

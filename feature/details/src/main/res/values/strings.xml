@@ -1,0 +1,4 @@
+<resources>
+    <string name="details_text_hint">Please type title ...</string>
+    <string name="details_text_description_hint">Please type description ...</string>
+</resources>
